@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "cabecalho" "conteudo" "footer";
+  grid-template-rows: 16vh 1fr;
+  background-image: linear-gradient(165deg, #f8f4ff 0%, #eff0f4 100%);
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  gap: 16px;
+  font-size: 0.6rem;
+  align-items: center;
+  margin-left: 1.3rem;
+}
+
+.cabecalho img {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 7vh;
+  width: 19vw;
+}
+
+.cabecalho div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.cabecalho div h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 35.2px;
+}
+
+.cabecalho div h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #a3a3a3;
+  line-height: 22.4px;
+}
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+.conteudo > nav > h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-indent: 16px;
+  margin: 8px 0px;
+  line-height: 25.6px;
+  color: #464646;
+}
+
+.card {
+  margin: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card-consulta-remota {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card-consulta-local {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cabecalho-consulta {
+  display: grid;
+  grid-template-columns: 4.2rem 1fr 2.5rem;
+
+  border-bottom: 1px solid #4646461a;
+  padding: 0.7rem 0px;
+  margin-bottom: 0.7rem;
+}
+
+.cabecalho-consulta h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #464646;
+}
+
+.cabecalho-consulta h3 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.foto-consulta {
+  border-radius: 50%;
+  height: 5vh;
+  width: 13vw;
+  margin-left: 1rem;
+}
+
+.nome-perfil {
+  display: grid;
+  grid-template-areas: "nome nome" "icone consulta";
+  grid-template-columns: 0.75rem 1fr;
+  gap: 10px;
+}
+
+.nome-perfil img {
+  grid-area: icone;
+}
+
+.nome-perfil h2 {
+  grid-area: nome;
+}
+
+.nome-perfil h3 {
+  grid-area: consulta;
+}
+
+.ligacao {
+  display: grid;
+  grid-template-areas: "hora hora" "lv la";
+  gap: 1.2rem;
+  padding: 0px 1.2rem 1.2rem 1.2rem;
+}
+
+.ligacao span {
+  grid-area: hora;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #464646;
+}
+
+.callphone {
+  grid-area: la;
+
+  padding: 13px 16px;
+  border-radius: 8px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #464646;
+}
+
+.videocall {
+  grid-area: lv;
+
+  padding: 13px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffb050;
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+}
+
+.endereco {
+  display: grid;
+  grid-template-areas: "hora" "endereco";
+  gap: 1.2rem;
+  padding: 0px 1.2rem 1.2rem 1.2rem;
+}
+
+.endereco span {
+  grid-area: hora;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #464646;
+}
+
+.botao-endereco {
+  grid-area: endereco;
+
+  padding: 16px 0px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4894ff;
+  box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#rodape {
+  grid-area: footer;
+
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: black;
+  text-shadow: 1px 1px 1px #4894ff;
+  background-color: #a3a3a3;
+  margin-top: 2rem;
+}
+
+/* RESOLUÇÃO 375PX */
+@media screen and (min-width: 375px) {
+  .cabecalho > div > h1 {
+    font-size: 1.7rem;
+  }
+
+  .cabecalho > div > h2 {
+    font-size: 1rem;
+  }
+
+  .cabecalho img {
+    width: 22vw;
+    height: 10vh;
+  }
+
+  .conteudo > nav > h2 {
+    font-size: 1.4rem;
+  }
+
+  .cabecalho-consulta {
+    grid-template-columns: 5rem 1fr 2.5rem;
+  }
+
+  .foto-consulta {
+    width: 14vw;
+    height: 7vh;
+  }
+
+  .cabecalho-consulta h2 {
+    font-size: 1rem;
+  }
+
+  .cabecalho-consulta h3 {
+    font-size: 0.9rem;
+  }
+
+  .ligacao span {
+    font-size: 0.95rem;
+  }
+
+  .endereco span {
+    font-size: 0.95rem;
+  }
+
+  .videocall {
+    font-size: 1rem;
+  }
+
+  .callphone {
+    font-size: 1rem;
+  }
+
+  .botao-endereco {
+    font-size: 1rem;
+  }
+}
+
+/* RESOLUÇÃO 425PX */
+@media screen and (min-width: 425px) {
+  .cabecalho > div > h1 {
+    font-size: 1.7rem;
+  }
+
+  .cabecalho > div > h2 {
+    font-size: 1.1rem;
+  }
+
+  .cabecalho img {
+    width: 22vw;
+    height: 10.5vh;
+  }
+
+  .conteudo > nav > h2 {
+    font-size: 1.5rem;
+  }
+
+  .cabecalho-consulta {
+    grid-template-columns: 6rem 1fr 2.5rem;
+  }
+
+  .foto-consulta {
+    width: 16.5vw;
+    height: 8vh;
+  }
+
+  .cabecalho-consulta h2 {
+    font-size: 1.2rem;
+  }
+
+  .cabecalho-consulta h3 {
+    font-size: 1rem;
+  }
+
+  .ligacao span {
+    font-size: 1.1rem;
+  }
+
+  .endereco span {
+    font-size: 1.1rem;
+  }
+
+  .videocall {
+    font-size: 1.05rem;
+  }
+
+  .callphone {
+    font-size: 1.05rem;
+  }
+
+  .botao-endereco {
+    font-size: 1.05rem;
+  }
+}
+
+/* RESOLUÇÃO 768PX (TABLET) */

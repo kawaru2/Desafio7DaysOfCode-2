@@ -59,7 +59,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   text-indent: 16px;
-  margin: 8px 0px;
+  margin: 0.5rem 0px;
   line-height: 25.6px;
   color: #464646;
 }
@@ -223,7 +223,7 @@ body {
   }
 
   .cabecalho img {
-    width: 22vw;
+    width: 23vw;
     height: 10vh;
   }
 
@@ -232,11 +232,11 @@ body {
   }
 
   .cabecalho-consulta {
-    grid-template-columns: 5rem 1fr 2.5rem;
+    grid-template-columns: 5.5rem 1fr 2.5rem;
   }
 
   .foto-consulta {
-    width: 14vw;
+    width: 16vw;
     height: 7vh;
   }
 
@@ -327,3 +327,78 @@ body {
 }
 
 /* RESOLUÇÃO 768PX (TABLET) */
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    margin-left: 1.7rem;
+  }
+
+  .cabecalho > div {
+    gap: 0.5rem;
+  }
+
+  .cabecalho > div > h1 {
+    font-size: 2.1rem;
+  }
+
+  .cabecalho > div > h2 {
+    font-size: 1.4rem;
+  }
+
+  .cabecalho img {
+    width: 17vw;
+    height: 14vh;
+  }
+
+  .conteudo > nav > h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0px;
+  }
+
+  .cabecalho-consulta {
+    grid-template-columns: 1fr 4.5fr 3.5rem;
+  }
+
+  .foto-consulta {
+    width: 12vw;
+    height: 10vh;
+  }
+
+  .cabecalho-consulta h2 {
+    font-size: 1.4rem;
+  }
+
+  .cabecalho-consulta h3 {
+    font-size: 1.1rem;
+    margin-left: 0.7rem;
+  }
+
+  .cabecalho-consulta img:nth-child(2) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .cabecalho-consulta img:nth-child(3) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .ligacao span,
+  .endereco span {
+    font-size: 1.2rem;
+  }
+
+  .videocall,
+  .callphone,
+  .botao-endereco {
+    font-size: 1.25rem;
+    padding: 1.2rem 1rem;
+  }
+
+  #rodape {
+    font-size: 1.1rem;
+    padding: 0.3rem 0px;
+    /* line-height: 1.7rem; */
+  }
+}
+
+/* RESOLUÇÃO PARA NOTEBOOK, VERSÃO FINAL PARA DESKTOP (1024PX) */

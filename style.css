@@ -94,12 +94,18 @@ body {
   font-size: 0.8rem;
   font-weight: 700;
   color: #464646;
+  cursor: default;
 }
 
 .cabecalho-consulta h3 {
   font-size: 0.7rem;
   font-weight: 400;
   color: #a3a3a3;
+  cursor: default;
+}
+
+.cabecalho-consulta img:nth-child(3) {
+  cursor: pointer;
 }
 
 .foto-consulta {
@@ -141,6 +147,7 @@ body {
   font-size: 0.8rem;
   font-weight: 500;
   color: #464646;
+  cursor: default;
 }
 
 .callphone {
@@ -154,6 +161,7 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
   color: #464646;
+  cursor: pointer;
 }
 
 .videocall {
@@ -164,6 +172,7 @@ body {
   border-radius: 8px;
   background-color: #ffb050;
   color: #ffffff;
+  cursor: pointer;
 
   font-size: 0.9rem;
   font-weight: 500;
@@ -183,6 +192,7 @@ body {
   font-size: 0.8rem;
   font-weight: 500;
   color: #464646;
+  cursor: default;
 }
 
 .botao-endereco {
@@ -192,6 +202,7 @@ body {
   border: none;
   border-radius: 8px;
   background-color: #4894ff;
+  cursor: pointer;
   box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
 
   color: #fff;
@@ -402,3 +413,23 @@ body {
 }
 
 /* RESOLUÇÃO PARA NOTEBOOK, VERSÃO FINAL PARA DESKTOP (1024PX) */
+@media screen and (min-width:1024px) {
+  body {
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .cabecalho img {
+    max-width: 130px;
+    max-height: 122px;
+  }
+
+  .foto-consulta {
+    max-width: 100px;
+    max-height: 90px;
+  }
+
+  .cabecalho-consulta {
+    grid-template-columns: 1fr 4fr 3.5rem;
+  }
+}

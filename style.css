@@ -221,6 +221,7 @@ body {
   text-shadow: 1px 1px 1px #4894ff;
   background-color: #a3a3a3;
   margin-top: 2rem;
+  cursor: default;
 }
 
 /* RESOLUÇÃO 375PX */

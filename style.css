@@ -34,6 +34,7 @@ body {
 
 .cabecalho div {
   display: flex;
+  width: 35vw;
   flex-direction: column;
   padding-top: 25px;
 }
@@ -227,7 +228,7 @@ body {
 /* RESOLUÇÃO 375PX */
 @media screen and (min-width: 375px) {
   .cabecalho > div > h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .cabecalho > div > h2 {
@@ -292,8 +293,8 @@ body {
   }
 
   .cabecalho img {
-    width: 22vw;
-    height: 10.5vh;
+    width: 35%;
+    height: 11vh;
   }
 
   .conteudo > nav > h2 {
@@ -301,12 +302,12 @@ body {
   }
 
   .cabecalho-consulta {
-    grid-template-columns: 6rem 1fr 2.5rem;
+    grid-template-columns: 8rem 1fr 2.5rem;
   }
 
   .foto-consulta {
-    width: 16.5vw;
-    height: 8vh;
+    width: 75%;
+    height: 80px;
   }
 
   .cabecalho-consulta h2 {
@@ -357,7 +358,7 @@ body {
   }
 
   .cabecalho img {
-    width: 17vw;
+    width: 30%;
     height: 14vh;
   }
 
@@ -371,7 +372,8 @@ body {
   }
 
   .foto-consulta {
-    width: 12vw;
+    min-width: 95px;
+    width: 60%;
     height: 10vh;
   }
 
